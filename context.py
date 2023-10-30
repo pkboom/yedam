@@ -1,6 +1,6 @@
 # https://realpython.com/python-with-statement/
 
-num = 3
+# num = 3
 
 
 def context():
@@ -9,5 +9,5 @@ def context():
     print(num)
 
 
-print(num)
+# print(num)
 context()

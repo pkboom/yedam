@@ -24,5 +24,4 @@ def infinite_sequence2():
         num += 1
 
 
-print(num)
 print("infinite_sequence2", infinite_sequence2())
