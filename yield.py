@@ -1,3 +1,6 @@
+# https://realpython.com/introduction-to-python-generators/
+
+
 def infinite_sequence():
     num = 0
     while True:
