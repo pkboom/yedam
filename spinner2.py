@@ -7,7 +7,7 @@ import time
 
 def crazy3() -> None:
     print("crazy3")
-    time.sleep(3)
+    time.sleep(10)
     # await asyncio.sleep(2)
     print("cray3 ends")
 
@@ -15,7 +15,7 @@ def crazy3() -> None:
 async def crazy2() -> None:
     print("uhahahah")
     # time.sleep(2)
-    await asyncio.sleep(2)
+    await asyncio.sleep(12)
     print("uhahahah2")
 
 
@@ -23,8 +23,8 @@ async def crazy() -> None:
     print("sleep")
     await asyncio.sleep(3)
     print("crazy starts here")
-    crazy3()
-    # await crazy2()
+    # crazy3()
+    await crazy2()
     # time.sleep(10)
     print("crazy finishes here")
 
