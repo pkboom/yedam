@@ -7,8 +7,8 @@ import time
 
 async def crazy2() -> None:
     print("uhahahah")
-    await asyncio.sleep(5)
-    # time.sleep(5)
+    # await asyncio.sleep(5)
+    time.sleep(7)
 
 
 async def crazy() -> None:
@@ -25,7 +25,6 @@ async def slow_operation() -> None:
         await crazy()
 
         print("after sleep")
-        print(spinner)
         spinner.set_visibility(False)
 
 
