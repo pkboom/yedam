@@ -5,16 +5,26 @@ import asyncio
 import time
 
 
+def crazy3() -> None:
+    print("crazy3")
+    time.sleep(3)
+    # await asyncio.sleep(2)
+    print("cray3 ends")
+
+
 async def crazy2() -> None:
     print("uhahahah")
-    # await asyncio.sleep(5)
-    time.sleep(7)
+    # time.sleep(2)
+    await asyncio.sleep(2)
+    print("uhahahah2")
 
 
 async def crazy() -> None:
-    print("crazy starts here")
+    print("sleep")
     await asyncio.sleep(3)
-    await crazy2()
+    print("crazy starts here")
+    crazy3()
+    # await crazy2()
     # time.sleep(10)
     print("crazy finishes here")
 
@@ -22,7 +32,9 @@ async def crazy() -> None:
 async def slow_operation() -> None:
     with ui.spinner(size="lg") as spinner:
         print("in slow operation")
+        # time.sleep(3)
         await crazy()
+        # await crazy3()
 
         print("after sleep")
         spinner.set_visibility(False)
